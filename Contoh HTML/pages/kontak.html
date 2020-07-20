@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tentangbuah.com - Kontak Boss</title>
+  </head>
+  <body>
+    <h1>tentangbuah.com</h1>
+    <img src="../images/logo.jpg" width="150" alt="" />
+    <ul>
+      <li><a href="../HTML-CSS.html">Home</a></li>
+      <li>
+        Buah
+        <ul>
+          <li><a href="apel.html">Apel</a></li>
+          <li><a href="jeruk.html">Jeruk</a></li>
+          <li><a href="mangga.html">Mangga</a></li>
+          <li><a href="pisang.html">Pisang</a></li>
+        </ul>
+      </li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+    <hr />
+    <form action="apel.html" method="get">
+      <fieldset>
+        <legend>Informasi Pemesanan</legend>
+        <label for="nama">Nama: </label>
+        <input type="text" name="nama" placeholder="Nama Anda" required />
+        <br /><br />
+        <label for="phone">Telepon: </label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+          placeholder="Masukkan"
+          required
+        />
+        <br /><br />
+        <label for="email">Email: </label>
+        <input type="email" name="email" placeholder="Email Anda" required />
+        <br /><br />
+
+        <label for="alamat">Alamat: </label>
+        <textarea name="alamat" id="" cols="30" rows="10"></textarea>
+        <br /><br />
+
+        <input type="submit" name="kirim" value="kirim" />
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Laki-laki</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Perempuan</label>
+        <br /><br />
+
+        <select name="buah" id="buah">
+          <option value="apel">Apel</option>
+          <option value="Mangga">Mangga</option>
+          <option value="pisang">Pisang</option>
+          <option value="jeruk">Jeruk</option>
+        </select>
+        <br /><br />
+        <p>terimakasih sudah memesan</p>
+      </fieldset>
+    </form>
+  </body>
+</html>
